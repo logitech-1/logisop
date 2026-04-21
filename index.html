@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logitech Sync Portal 完整操作手冊 (支援與授權)</title>
+    <style>
+        :root {
+            --primary: #005a9e;
+            --secondary: #2c3e50;
+            --bg-color: #f1f5f9;
+            --text-color: #334155;
+            --card-bg: #ffffff;
+            --accent: #0284c7;
+            --stage-bg: #f8fafc;
+        }
+
+        body {
+            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, var(--primary) 0%, #0284c7 100%);
+            color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,90,158,0.2);
+        }
+
+        header h1 {
+            font-size: 2.2em;
+            margin: 0;
+        }
+
+        .subtitle {
+            opacity: 0.9;
+            margin-top: 10px;
+            font-size: 1.1em;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            padding: 35px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+        }
+
+        .card h2 {
+            color: var(--primary);
+            font-size: 1.6em;
+            margin-top: 0;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 12px;
+        }
+
+        .card h3 {
+            color: var(--accent);
+            font-size: 1.2em;
+            margin-top: 25px;
+            border-left: 4px solid var(--accent);
+            padding-left: 10px;
+        }
+
+        .alert {
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-weight: 500;
+        }
+        .alert-info { background-color: #f0f9ff; border-left: 4px solid #0ea5e9; color: #0369a1; }
+        .alert-warn { background-color: #fffbeb; border-left: 4px solid #f59e0b; color: #92400e; }
+        .alert-danger { background-color: #fef2f2; border-left: 4px solid #ef4444; color: #991b1b; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95em;
+        }
+        th, td {
+            border: 1px solid #cbd5e1;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f8fafc;
+            color: var(--secondary);
+            font-weight: bold;
+        }
+
+        .step-list {
+            list-style: none;
+            padding: 0;
+        }
+        .step-list > li {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 2px dashed #cbd5e1;
+        }
+        .step-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: var(--secondary);
+            display: block;
+            margin-bottom: 5px;
+        }
+        .tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            background: #e2e8f0;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-right: 5px;
+        }
+        .migration-box {
+            background-color: var(--stage-bg);
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+        ul { padding-left: 25px; }
+        a { color: var(--accent); text-decoration: none; font-weight: 600; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Logitech Sync Portal 完整操作手冊</h1>
+        <p class="subtitle">針對無須雲端連線，僅需使用報修與授權功能之企業用戶</p>
+    </header>
+
+    <div class="alert alert-info">
+        <strong>💡 核心觀念：</strong> Sync Portal 採用安全雲端架構。但如果您不想將設備連線至 Sync，也完全沒問題！使用 Sync 來「開立客服工單」或「管理合約授權」，<strong>並不需要</strong>將實體設備連線。
+    </div>
+
+    <div class="card">
+        <h2>★ 從 Service Portal 移轉至 Sync 的三步驟</h2>
+        <p>如果您以前有在使用舊版的 Select Portal，登入時系統會引導您完成帳號與設備的轉移：</p>
+
+        <div class="migration-box">
+            <h3>第一階段：發起移轉 (Initiation)</h3>
+            <ul class="step-list">
+                <li><span class="step-title">觸發提示：</span>在舊版 Select Portal 頂端會看到 Banner 提醒，請點擊 <strong>Start the process (開始移轉)</strong>。</li>
+                <li><span class="step-title">決定轉移去向 (三選一)：</span>
+                    <ul style="margin-top: 8px;">
+                        <li><strong>選項 A (Aneez Ventures)：</strong> 直接從清單中勾選您要接收舊設備的 Sync 組織。</li>
+                        <li><strong>選項 B (找不到組織)：</strong> 點選 <strong>My Sync Organization is not listed</strong>，並手動輸入您的 <strong>Sync Organization ID</strong>。</li>
+                        <li><strong>選項 C (需拆分多個組織)：</strong> 若要將設備分配到不同的 Sync 組織，請勾選 <strong>Move manually added rooms... to multiple Sync Organizations</strong>，此時系統會提示您發送 Email 至 <strong>select@logitech.com</strong>，由羅技服務團隊人工協助處理。</li>
+                    </ul>
+                </li>
+                <li><span class="step-title">最終確認 (不可逆)：</span>點擊 Next 後會跳出警告視窗。確認無誤後點擊 <strong>Okay</strong> 正式啟動。<strong>此過程一旦確認便無法復原</strong>。</li>
+            </ul>
+	    <div style="text-align: center; margin-top: 20px;">
+                <img src="image/1.png" alt="第一階段移轉示意圖" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                <p style="font-size: 0.85em; color: #666; margin-top: 8px;">▲ 觸發提示</p>
+            </div>
+	    <div style="text-align: center; margin-top: 20px;">
+                <img src="image/2.png" alt="第一階段移轉示意圖" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                <p style="font-size: 0.85em; color: #666; margin-top: 8px;">▲ 移轉去向</p>
+            </div>
+	    <div style="text-align: center; margin-top: 20px;">
+                <img src="image/3.png" alt="第一階段移轉示意圖" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                <p style="font-size: 0.85em; color: #666; margin-top: 8px;">▲ 最終確認</p>
+            </div>
+        </div>
+
+        <div class="migration-box">
+            <h3>第二階段：處理中 (In Progress)</h3>
+            <ul class="step-list">
+                <li><span class="step-title">作業時間：</span>移轉時間視房間與設備數量而定，約需數分鐘至數小時不等。這段期間舊版 Portal 頂端會顯示 <strong>"Migration... is in progress"</strong>。</li>
+                <li><span class="step-title">系統通知：</span>系統會發送確認信給您以及羅技內部的業務團隊 (AM/CSM/DSM)。在等待期間，建議您可先登入 Sync 熟悉一下介面。</li>
+            </ul>
+	    <div style="text-align: center; margin-top: 20px;">
+                <img src="image/4.png" alt="第二階段移轉示意圖" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                <p style="font-size: 0.85em; color: #666; margin-top: 8px;">▲ Email to the customer</p>
+            </div>
+	     <div style="text-align: center; margin-top: 20px;">
+                <img src="image/5.png" alt="第二階段移轉示意圖" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                <p style="font-size: 0.85em; color: #666; margin-top: 8px;">▲ Email to the AM,CSM & DSM</p>
+            </div>
+
+        </div>
+
+        <div class="migration-box">
+            <h3>第三階段：完成移轉 (Complete)</h3>
+            <ul class="step-list">
+                <li><span class="step-title">成功通知：</span>移轉結束後，您會收到一封標題為 "Migration now complete" 的 Email，舊版 Portal 頂端也會變更為 <strong>"Congratulations..."</strong> 的完成畫面。</li>
+                <li><span class="step-title">後續動作：</span>請點擊 <strong>Go to Sync</strong> 登入 Sync Portal，確認所有的房間、設備、合約以及工單是否都已正確顯示。往後所有的報修與合約管理，通通都在 Sync 進行囉！</li>
+            </ul>
+	    <div style="text-align: center; margin-top: 20px;">
+                <img src="image/6.png" alt="第三階段移轉示意圖" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                <p style="font-size: 0.85em; color: #666; margin-top: 8px;">▲ Email to the customer</p>
+            </div>
+	    <div style="text-align: center; margin-top: 20px;">
+                <img src="image/7.png" alt="第三階段移轉示意圖" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                <p style="font-size: 0.85em; color: #666; margin-top: 8px;">▲ Email to the AM,CSM & DSM</p>
+            </div>
+        </div>
+
+        <div class="alert alert-warn">
+            <strong>⚠️ 補充說明：哪些東西「不會」被自動移轉？</strong><br>
+            1. <strong>純個人周邊設備：</strong> 像是 Wave Keys 鍵盤、MX Vertical 滑鼠、C615 視訊鏡頭等非會議室系統的周邊無法轉移（註：會議室用的 Rally Mic Pod 會被歸類在 Room System 內一併轉移）。<br>
+            2. <strong>舊版 Portal 的使用者：</strong> 因為兩邊系統權限設計不同加上隱私考量，舊系統的同事帳號不會自動搬過去。請依照下方第 2 章節的步驟，在 Sync 重新發 Email 邀請同事。
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>1. 帳號開通與加入組織</h2>
+        <h3>1.1 註冊流程</h3>
+        <ul class="step-list">
+            <li><span class="step-title">前往註冊：</span>進入 <a href="https://sync.logitech.com/home" target="_blank">Sync Portal</a>，點擊 <strong>Sign up</strong>。</li>
+            <li><span class="step-title">填寫資料與驗證：</span>輸入商務 Email 與公司名稱。同意隱私條款並過完 reCAPTCHA 驗證後，去信箱點擊 <strong>Verify My Email</strong>，完成後續資料填寫。</li>
+        </ul>
+
+        <h3>1.2 常見的加入情境 (Request Access vs. Create New)</h3>
+        <p>當您輸入公司 Email 時，系統會自動偵測您的網域：</p>
+        <ul>
+            <li><strong>出現 Request access：</strong>代表有同事已經建立過同網域的組織。我們<strong>強烈建議</strong>點擊 Request access 申請加入，避免在系統內產生重複的組織。您的申請會送到管理員那裡審核（View Requests）。</li>
+            <li><strong>只出現 Create a new organization：</strong>代表您輸入的組織名稱已被別人註冊，請換一個名稱（例如加上分公司名稱）再試一次。</li>
+        </ul>
+        <div class="alert alert-warn">
+            <strong>⚠️ 擁有者限制：</strong>同一個 Email 只能作為「Owner」建立一個租戶。若貴公司需要切割多個獨立的 Sync 租戶，請使用 Email 別名 (Alias) 建立新租戶，再將您的主要 Email 加進去當管理員。
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>2. 使用者管理 (Users)</h2>
+        <p>新增使用者需透過 Email 邀請。請到左側選單的 <code>System</code> > <code>Users</code> 進行管理。</p>
+
+        <h3>2.1 完整權限角色說明 (User Roles)</h3>
+        <table>
+            <tr>
+                <th width="20%">角色名稱</th>
+                <th>權限說明</th>
+            </tr>
+            <tr>
+                <td><span class="tag">Owner</span> (擁有者)</td>
+                <td>最高權限。擁有平台所有功能。<strong>可以檢視與分配合約授權 (License)。</strong></td>
+            </tr>
+            <tr>
+                <td><span class="tag">3rd Party</span> (第三方)</td>
+                <td>專為外部維護廠商設計。可增刪房間、設備，且<strong>可以分配授權 (License)</strong>。可開工單。</td>
+            </tr>
+            <tr>
+                <td><span class="tag">Sync Admin</span> (管理員)</td>
+                <td>可增刪一般使用者、管理房間與終端設備。可開工單。<strong>(無法管理授權)</strong></td>
+            </tr>
+            <tr>
+                <td><span class="tag">Device Admin</span> (設備管理)</td>
+                <td>可增刪/修改設備，但無法管理使用者或群組。可開工單。<strong>(無法管理授權)</strong></td>
+            </tr>
+            <tr>
+                <td><span class="tag">Device Manager</span></td>
+                <td>僅能「管理」設備（無法新增/刪除設備，也不能動使用者與授權）。</td>
+            </tr>
+            <tr>
+                <td><span class="tag">Installer</span> (安裝員)</td>
+                <td>可新增設備/房間、移動設備位置、刪除房間。無法管人與授權。</td>
+            </tr>
+            <tr>
+                <td><span class="tag">Support Only</span></td>
+                <td>純客服聯絡人。只能看，以及開立/追蹤報修工單。不能改任何設定。</td>
+            </tr>
+            <tr>
+                <td><span class="tag">Read Only</span> (唯讀)</td>
+                <td>只能檢視，不能做任何更改，也不能開立工單。</td>
+            </tr>
+        </table>
+
+        <h3>2.2 進階帳號管理操作</h3>
+        <ul>
+            <li><strong>編輯權限：</strong>在使用者列表中點選該使用者，右側會滑出面板，您可以更改其 Role（角色），或限制他們只能看到特定群組的資料 (Access Control)。<strong>注意：Email 一旦建立無法更改，只能刪除重建。</strong></li>
+            <li><strong>下載名單：</strong>點擊列表上方的 <code>Download Data</code>，可以將所有使用者名單匯出為 .csv 格式（包含建立時間與更新時間）。</li>
+            <li><strong>刪除使用者：</strong>只有 Owner 或 3rd Party 可以刪除其他使用者。勾選使用者後，點擊 <code>Delete</code> 並確認即可。</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>3. 服務授權與合約管理 (Contracts)</h2>
+        <p>購買羅技服務（如 Essential 或 Select）後，請確保只有 <strong>Owner</strong> 或 <strong>3rd Party</strong> 權限的帳號來進行操作。</p>
+
+        <h3>3.1 匯入與查看合約</h3>
+        <ul>
+            <li>點擊左側選單的 <code>Contracts</code>。這裡會集中顯示您所有的合約。</li>
+            <li><strong>下載 PDF：</strong>點擊特定合約，可以查看剩餘效期與授權數量，畫面中也可以直接下載該合約的 PDF 檔。</li>
+            <li><strong>修改名稱：</strong>點擊合約號碼旁邊的「編輯 ✏️」圖示，可以為合約取一個好記的自訂名稱（例如：台北總部 2024）。原本的合約號碼依然會保留顯示。</li>
+        </ul>
+
+        <h3>3.2 三種分配授權 (Assign License) 的方法</h3>
+        <ul class="step-list">
+            <li><span class="step-title">方法 A：批次分配 (Bulk selection)</span>
+                進入 <code>Inventory</code>，把需要授權的房間全部打勾，點選上方工具列的 <strong>Assign License</strong>，接著在跳出的視窗中選擇對應的合約即可。</li>
+            <li><span class="step-title">方法 B：單一設備分配</span>
+                在 Inventory 列表直接針對單一房間進行授權綁定。</li>
+            <li><span class="step-title">方法 C：從房間內部配置</span>
+                點擊進入某個特定的 Meeting Room，在上方導覽列切換到 <strong>Details</strong> 頁籤。在下方會看到 Contract 的下拉選單，直接挑選合約即可。</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>4. 客服工單報修 (Support Ticketing)</h2>
+        
+        <h3>4.1 兩種開立工單的途徑</h3>
+        <ul>
+            <li><strong>途徑一：從 Support Tickets 總表開單</strong><br>
+                點擊左側 <code>Support tickets</code> (救生圈圖示) > 點擊右上角 <strong>Create a ticket</strong> > 手動選擇有問題的產品並填寫資訊。</li>
+            <li><strong>途徑二：直接從故障的房間開單 (最推薦、最快)</strong><br>
+                到左側 <code>Meeting Rooms/Desks</code> > <code>Inventory</code> 找到出問題的房間 > 切換到 <strong>Support</strong> 頁籤 > 點擊 <strong>Create a ticket</strong>。系統會自動帶入該房間的設備與綁定的授權等級，直接填寫故障情況即可。</li>
+        </ul>
+
+        <h3>4.2 工單狀態說明 (Ticket Status)</h3>
+        <table>
+            <tr>
+                <th width="20%">狀態</th>
+                <th>說明</th>
+            </tr>
+            <tr>
+                <td><strong>Open</strong></td>
+                <td>工單已建立，Logitech 客服團隊正在檢視或處理中。</td>
+            </tr>
+            <tr>
+                <td><strong>Awaiting your reply</strong></td>
+                <td>客服已回覆，正在等待您提供進一步資訊（需要您的動作）。</td>
+            </tr>
+            <tr>
+                <td><strong>Solved</strong></td>
+                <td>問題已解決（或因閒置多日被系統標記為解決）。您可以在 7 天內回覆以重新開啟它。</td>
+            </tr>
+            <tr>
+                <td><strong>Closed</strong></td>
+                <td>已徹底關閉的工單。<strong>無法重新開啟</strong>，若有後續問題需開立新工單。</td>
+            </tr>
+        </table>
+
+        <h3>4.3 加入追蹤者 (Sync Followers)</h3>
+        <p>您可以把同事加入工單的 Followers 讓他們一起追蹤進度。<strong>請注意：外部信箱（沒有 Sync 帳號的人）也能被加入追蹤，但他們只會收到 Email 通知，無法登入 Sync Portal 看工單。</strong></p>
+
+        <h3>4.4 歷史舊工單轉移與分享 (重要！)</h3>
+        <p>如果您以前在舊版 Business Support 網站開過工單，請留意以下規則：</p>
+        <ul class="step-list">
+            <li><span class="step-title">預設是隱私的：</span>舊網站來的工單，剛轉移過來時<strong>只有您自己看得到</strong>。</li>
+            <li><span class="step-title">如何分享給全公司：</span>進入 <code>Support</code> > <code>Business Support</code>，點擊該舊工單，點擊右上角的 <strong>MANAGE TICKET</strong>，選擇 <strong>Share</strong>。分享後，全組織都能在 All spaces 看到它。</li>
+        </ul>
+        <div class="alert alert-danger">
+            <strong>⚠️ 不可逆操作：</strong>分享舊工單的動作是無法復原的 (cannot be undone)。如果您身兼多個 Sync 組織，請確認您正在正確的組織內進行分享。
+        </div>
+
+        <h3>4.5 常見問答：如果同事離職了，他的工單會怎樣？</h3>
+        <ul>
+            <li>他在 Sync 裡面建立的工單，會永遠保留在組織內。</li>
+            <li>他以前在舊系統開的工單，如果<strong>已經按過 Share</strong>，團隊依然可以檢視與編輯。</li>
+            <li>他以前在舊系統開的工單，如果<strong>從未分享過</strong>，那該工單會跟著他的 Email 帶走，組織將無法查看。</li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>
